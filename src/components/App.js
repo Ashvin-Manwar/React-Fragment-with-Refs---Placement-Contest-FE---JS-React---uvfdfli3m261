@@ -18,9 +18,6 @@ const App = () => {
     setValue('')
   };
 
-
- 
-
   return (
     <div id="main">
 

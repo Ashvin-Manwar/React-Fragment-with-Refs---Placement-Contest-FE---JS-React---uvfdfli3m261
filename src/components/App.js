@@ -9,7 +9,9 @@ const App = () => {
   const [list, setList] = useState([]);
   const inputRef = useRef();
 
-  const onButtonClick = () => {
+onst onButtonClick = (e) => {
+    e.preventDefault();
+    setValue(inputRef.current.value);
     
     setList([]);
     for (let i = 1; i < Number(value) + 1; i++) {
@@ -17,6 +19,8 @@ const App = () => {
     }
     setValue('')
   };
+
+
 
   return (
     <div id="main">
